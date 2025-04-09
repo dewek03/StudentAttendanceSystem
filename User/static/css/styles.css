@@ -1,0 +1,161 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background: #007bff;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Form Styles */
+.container {
+    width: 40%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    margin-top: 80px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 90%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Landing Page */
+.landing-container {
+    text-align: center;
+    padding: 150px 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    height: 100vh;
+}
+
+.landing-container h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.landing-container p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.landing-container a {
+    padding: 12px 25px;
+    background: #fff;
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.landing-container a:hover {
+    background: #ddd;
+}
+
+/* Index Page */
+.index-container {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.index-container h1 {
+    color: #333;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.index-container p {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .landing-container h1 {
+        font-size: 36px;
+    }
+
+    .landing-container p {
+        font-size: 16px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+}
